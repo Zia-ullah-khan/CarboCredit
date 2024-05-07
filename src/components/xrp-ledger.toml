@@ -1,0 +1,20 @@
+[[ISSUERS]]
+address = "rKZRJgCYtHpxUpv2wnSzrp5GMY3tehRCNU"
+name = "CCZ"
+
+[[TOKENS]]
+issuer = "rKZRJgCYtHpxUpv2wnSzrp5GMY3tehRCNU"
+currency = "CCZ"
+name = "CCZ"
+desc = "CCZ is a digital currency, developed specifically for the CarboCredit.org."
+icon = "https://carbocredit.org/Images/logo.png"
+
+[[TOKENS.WEBLINKS]]
+url = "https://CarboCredit.org"
+type = "website"
+title = "Official Website"
+
+
+[[TOKENS.WEBLINKS]]
+url = "https://www.linkedin.com/company/carbocredit-org/"
+type = "socialmedia"
