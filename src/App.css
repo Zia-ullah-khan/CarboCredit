@@ -1,0 +1,310 @@
+
+/*dissabling error popus */
+iframe
+{
+    display: none;
+}
+/* home and main background stuff */
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../public/Images/background.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+body{
+  background-image: url(../public/Images/background.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.logo{
+  width: 100px;
+  cursor: pointer;
+}
+
+.navbar{
+  width: 85%;
+  height: 15%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  color: #fbfcfd;
+  padding: 10px 25px;
+  background: transparent;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.content{
+  color: #fbfcfd;
+  position:absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+p, h2, ol, h3{
+  margin: 0px 25px;
+}
+h1{
+  font-size: 80px;
+  margin: 10px 0 30px;
+  line-height: 80px;
+}
+.sidebar {
+  width: 65px; /* Adjust the width as needed */
+  height: 100vh;
+  background: linear-gradient(#00545d, #000729);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.menu{
+  display: block;
+  width: 25px;
+  margin: 40px auto 0;
+  cursor: pointer;
+}
+.social img, .usefull img{
+  width: 30px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.social{
+  width: 40px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.usefull{
+  width: 40px;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+}
+.bubbles img {
+  width: 50px;
+  animation: bubble 7s linear infinite; /* Ensure animation property is correctly applied */
+}
+
+.bubbles{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+  width: 25px;
+}
+.bubbles img:nth-child(2) {
+  animation-delay: 3.5s;
+  width: 20px;
+}
+.bubbles img:nth-child(3) {
+  animation-delay: 4.5s;
+}
+.bubbles img:nth-child(4) {
+  animation-delay: 6.5s;
+  width: 25px;
+}
+.bubbles img:nth-child(5) {
+  animation-delay: 7.5s;
+}
+.bubbles img:nth-child(6) {
+  animation-delay: 8.5s;
+  width: 20px;
+}
+.bubbles img:nth-child(7) {
+  animation-delay: 9.5s;
+}
+
+.description {
+  color: #fbfcfd;
+}
+/* Adjust the position of the mobile menu */
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 3em;
+  }
+  .sidebar{
+    display:none;
+  }
+}
+/* Signup */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-form-container {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%;
+}
+
+.signup-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 5px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-group label {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btn-signup {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-signup:hover {
+  background-color: #0056b3;
+}
+
+.signup-form h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+/* projects */
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.elevated-background {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* This creates an elevation effect */
+  padding: 20px;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.project-table th,
+.project-table td, button {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  color: #000729;
+}
+
+.project-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+/* Sidebar.css */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+.sidebar{
+  padding-top: 5rem;
+  padding-inline: 1rem;
+}
+
+/* admin.js */
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000729;
+  }
+  
+  .form-wrapper {
+    width: 300px;
+    margin: auto;
+  }
+  
