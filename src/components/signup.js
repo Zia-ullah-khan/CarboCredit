@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Xumm } from 'xumm';
 import '../App.css';
 
-const xumm = new Xumm('1e9144b6-adcf-45ac-bc96-930311f872eb'); // Some API Key
+const xumm = new Xumm('Some API Key');
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
