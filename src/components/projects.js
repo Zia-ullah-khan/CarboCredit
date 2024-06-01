@@ -29,7 +29,7 @@ const Projects = () => {
 
   useEffect(() => {
     fetchData();
-    const xumm = new Xumm('1e9144b6-adcf-45ac-bc96-930311f872eb');
+    const xumm = new Xumm('Some API Key');
     xumm.user.account.then(account => {
       fetchData();
     });
